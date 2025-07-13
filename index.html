@@ -2,10 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My CV</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com ">
+  <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- CV content will go here -->
+  <header class="header">
+    <div class="container">
+
+      <div class="profile">
+      <h1 class="name">Daria Khalzanova</h1>
+      <img src="assets/img/photo.jpg" alt="my photo" class="photo">
+    </div>
+
+  <nav class="nav">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+  </ul>
+</nav>
+
+</div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+       <div class="main-container">
+
+<section class="section" id="contacts">
+  <h2 class="section-title">Contact Information</h2>
+  <ul>
+    <li>Email: <a href="mailto:halzanovad@mail.ru">halzanovad@mail.ru</a></li>
+    <li>Phone number: 89817670337</li>
+    <li>Discord: darritoss</li>
+    <li>GitHub: <a href="https://github.com/Darritoss" target="_blank">github.com/Darritoss</a></li>
+  </ul>
+</section>
+
+<section class="section" id="summary">
+  <h2 class="section-title">About Me</h2>
+  <p>I graduated from the Bonch-Bruevich University of Telecommunications as a network engineer and work as a specialist at Rostelecom. I really enjoy travelling, so the most important thing for me is the freedom to move around the world while continuing to earn income. That’s why I decided to pursue an education that allows remote work. As development and design are both close and interesting to me, I chose to explore Frontend development.</p>
+</section>
+
+<section class="section" id="skills">
+  <h2 class="section-title">Skills</h2>
+  <ul>
+    <li>JavaScript Basics</li>
+    <li>Git & GitHub</li>
+    <li>Figma</li>
+    <li>HTML/CSS</li>
+  </ul>
+</section>
+
+<section class="section" id="code">
+  <h2 class="section-title">Code Example</h2>
+  <p>Detect Pangram from Codewars:</p>
+  <p>A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant). Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.</p>
+  <pre><code>
+function isPangram(string){
+  string = string.toLowerCase();
+  const onlyLetters = string.replace(/[^a-z]/g, '');
+  const uniqueLetters = new Set(onlyLetters);
+  return uniqueLetters.size === 26;
+}
+  </code></pre>
+</section>
+
+<section class="section" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <ul>
+    <li><a href="https://github.com/Darritoss/rsschool-cv" target="_blank">CV Project (GitHub)</a></li>
+  </ul>
+</section>
+
+<section class="section" id="education">
+  <h2 class="section-title">Education</h2>
+  <ul>
+    <li>Bonch-Bruevich University of Telecommunications  
+      — Faculty of Information Communication Technologies and Communication Systems</li>
+    <li>Selectel Bootcamp</li>
+    <li>Translation in IT courses, Bonch-Bruevich University</li>
+  </ul>
+</section>
+
+<section class="section" id="english">
+  <h2 class="section-title">Languages</h2>
+  <ul>
+    <li>Russian — Native</li>
+    <li>English — Intermediate</li>
+    <li>German — Basic</li>
+  </ul>
+</section>
+
+</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+  <a href="https://github.com/Darritoss" target="_blank">GitHub: Darritoss</a> © 2025
+</p>
+
+<a href="https://rs.school/courses/javascript-ru" target="_blank">
+  <img src="assets/img/rs-school-logo.svg" alt="RS School logo" class="rss-logo">
+</a>
+
+    </div>
+  </footer>
 </body>
 </html>
